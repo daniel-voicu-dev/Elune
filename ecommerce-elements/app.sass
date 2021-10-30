@@ -1,0 +1,30 @@
+@use "./assets/sass/framework"
+
+.c-banner
+  display: grid 
+  grid-template-area: "banner"
+  .decor 
+    grid-area: banner 
+  .backdrop
+    grid-area: banner
+    > img 
+      object-fit: contain
+      width: 100% 
+      height: auto
+  .decor 
+    display: flex 
+    flex-wrap: wrap
+    flex-direction: column
+    align-content: center
+    justify-content: center    
+    > * 
+      max-inline-size: 800px
+    // justify-content: flex-start
+    // justify-content: flex-end
+    // align-content: flex-start
+    // align-content: flex-end
+    // > *
+    //   max-inline-size: 80ch
+    // margin: 0 auto
+  
+        
